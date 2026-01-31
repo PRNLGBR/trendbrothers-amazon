@@ -1,10 +1,6 @@
 git init
 git add .
 git commit -m "primeira versão site afiliado amazon"
-git branch -M main add {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
-}
+git branch -M main
 git remote add origin https://github.com/PRNLGBR/trendbrothers-amazon.git
 git push -u origin main
