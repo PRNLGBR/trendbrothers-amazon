@@ -1,86 +1,17 @@
-export const products = [
-  {
-    id: 1,
-    name: "Echo Dot (5ª Geração) – Smart Speaker com Alexa",
-    image: "https://m.media-amazon.com/images/I/71xoR4A2BML._AC_SL1000_.jpg",
-    price: 379.00,
-    originalPrice: 449.00,
-    rating: 4.8,
-    reviews: 12453,
-    category: "Casa Inteligente",
-    badge: "Mais vendido",
-    description:
-      "O Echo Dot 5ª geração oferece som mais potente, graves reforçados e integração completa com Alexa. Controle dispositivos inteligentes, toque músicas, faça perguntas e organize sua rotina com comandos de voz.",
-    amazonUrl: "https://www.amazon.com.br/dp/EXEMPLO1?tag=seutag-20",
-  },
-  {
-    id: 2,
-    name: "Fire TV Stick 4K com Controle por Voz Alexa",
-    image: "https://m.media-amazon.com/images/I/51CgKGfMelL._AC_SL1000_.jpg",
-    price: 399.00,
-    originalPrice: 479.00,
-    rating: 4.7,
-    reviews: 9876,
-    category: "Entretenimento",
-    badge: "Oferta",
-    description:
-      "Transforme sua TV em uma smart TV com o Fire TV Stick 4K. Acesso rápido a Netflix, Prime Video, Disney+, YouTube e muito mais com qualidade 4K Ultra HD.",
-    amazonUrl: "https://www.amazon.com.br/dp/EXEMPLO2?tag=seutag-20",
-  },
-  {
-    id: 3,
-    name: "Kindle Paperwhite (11ª Geração)",
-    image: "https://m.media-amazon.com/images/I/61B+8oPj1EL._AC_SL1000_.jpg",
-    price: 699.00,
-    originalPrice: 799.00,
-    rating: 4.9,
-    reviews: 18432,
-    category: "Leitura",
-    badge: "Escolha da Amazon",
-    description:
-      "Tela antirreflexo de 6,8”, iluminação ajustável e bateria que dura semanas. Leve sua biblioteca inteira para onde quiser com conforto total para os olhos.",
-    amazonUrl: "https://www.amazon.com.br/dp/EXEMPLO3?tag=seutag-20",
-  },
-  {
-    id: 4,
-    name: "Fone de Ouvido Bluetooth JBL Tune 510BT",
-    image: "https://m.media-amazon.com/images/I/61kFL7ywsZS._AC_SL1000_.jpg",
-    price: 249.00,
-    originalPrice: 299.00,
-    rating: 4.6,
-    reviews: 6432,
-    category: "Áudio",
-    badge: "Bom custo-benefício",
-    description:
-      "Som JBL Pure Bass, até 40 horas de bateria e conexão Bluetooth estável. Ideal para música, chamadas e uso diário.",
-    amazonUrl: "https://www.amazon.com.br/dp/EXEMPLO4?tag=seutag-20",
-  },
-  {
-    id: 5,
-    name: "Aspirador Robô Xiaomi Vacuum-Mop 2",
-    image: "https://m.media-amazon.com/images/I/61EJ7n7G7BL._AC_SL1000_.jpg",
-    price: 1899.00,
-    originalPrice: 2199.00,
-    rating: 4.5,
-    reviews: 3214,
-    category: "Casa Inteligente",
-    badge: "Alta avaliação",
-    description:
-      "Aspirador robô inteligente com mapeamento a laser, controle por app e função de aspiração e passar pano. Ideal para quem quer praticidade.",
-    amazonUrl: "https://www.amazon.com.br/dp/EXEMPLO5?tag=seutag-20",
-  },
-  {
-    id: 6,
-    name: "Smartwatch Amazfit Bip U Pro",
-    image: "https://m.media-amazon.com/images/I/61Nf3zJ2GFL._AC_SL1000_.jpg",
-    price: 329.00,
-    originalPrice: 399.00,
-    rating: 4.4,
-    reviews: 5421,
-    category: "Wearables",
-    badge: "Popular",
-    description:
-      "Monitoramento de saúde, GPS integrado, Alexa embutida e bateria de longa duração. Ótimo para quem quer começar no mundo dos smartwatches.",
-    amazonUrl: "https://www.amazon.com.br/dp/EXEMPLO6?tag=seutag-20",
-  },
-];
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+const Deals = () => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-grow flex flex-col items-center justify-center">
+        <h1 className="text-3xl font-bold mb-4">Ofertas Especiais</h1>
+        <p>Em breve você verá nossas melhores ofertas aqui!</p>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Deals;
